@@ -40,7 +40,7 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /img/boqi.png
 
 # Avatar (頭像)
 avatar:
@@ -730,7 +730,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
+  global-font-size: 16px;
   code-font-size:
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
@@ -738,8 +738,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  # font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font-family: HongLei, Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -761,9 +761,10 @@ subtitle:
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 3
+  source: 1
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
-  sub: 人活着的目的是什么？
+  sub:
+    - 人活着的目的是什么？
 
 # Loading Animation (加載動畫)
 preloader:
@@ -912,8 +913,13 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/_custom/custom.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/font.css">
   bottom:
     - <div class="aplayer no-destroy" data-id="421423806" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>
+    - <script src="/js/custom.js"></script>
+    - <script src="/js/weather.js"></script>
+    - <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -936,59 +942,59 @@ CDN:
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
 
-  option:
-    # abcjs_basic_js:
-    # activate_power_mode:
-    # algolia_js:
-    # algolia_search:
-    # aplayer_css:
-    # aplayer_js:
-    # artalk_css:
-    # artalk_js:
-    # blueimp_md5:
-    # busuanzi:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # canvas_ribbon:
-    # click_heart:
-    # clickShowText:
-    # disqusjs:
-    # disqusjs_css:
-    # docsearch_css:
-    # docsearch_js:
-    # egjs_infinitegrid:
-    # fancybox:
-    # fancybox_css:
-    # fireworks:
-    # fontawesome:
-    # gitalk:
-    # gitalk_css:
-    # giscus:
-    # instantpage:
-    # instantsearch:
-    # katex:
-    # katex_copytex:
-    # lazyload:
-    # local_search:
-    # main:
-    # main_css:
-    # mathjax:
-    # medium_zoom:
-    # mermaid:
-    # meting_js:
-    # pangu:
-    # prismjs_autoloader:
-    # prismjs_js:
-    # prismjs_lineNumber_js:
-    # pjax:
-    # sharejs:
-    # sharejs_css:
-    # snackbar:
-    # snackbar_css:
-    # translate:
-    # twikoo:
-    # typed:
-    # utils:
-    # valine:
-    # waline_css:
-    # waline_js:
+  # option:
+  # abcjs_basic_js:
+  # activate_power_mode:
+  # algolia_js:
+  # algolia_search:
+  # aplayer_css:
+  # aplayer_js:
+  # artalk_css:
+  # artalk_js:
+  # blueimp_md5:
+  # busuanzi:
+  # canvas_fluttering_ribbon:
+  # canvas_nest:
+  # canvas_ribbon:
+  # click_heart:
+  # clickShowText:
+  # disqusjs:
+  # disqusjs_css:
+  # docsearch_css:
+  # docsearch_js:
+  # egjs_infinitegrid:
+  # fancybox:
+  # fancybox_css:
+  # fireworks:
+  # fontawesome:
+  # gitalk:
+  # gitalk_css:
+  # giscus:
+  # instantpage:
+  # instantsearch:
+  # katex:
+  # katex_copytex:
+  # lazyload:
+  # local_search:
+  # main:
+  # main_css:
+  # mathjax:
+  # medium_zoom:
+  # mermaid:
+  # meting_js:
+  # pangu:
+  # prismjs_autoloader:
+  # prismjs_js:
+  # prismjs_lineNumber_js:
+  # pjax:
+  # sharejs:
+  # sharejs_css:
+  # snackbar:
+  # snackbar_css:
+  # translate:
+  # twikoo:
+  # typed:
+  # utils:
+  # valine:
+  # waline_css:
+  # waline_js:
