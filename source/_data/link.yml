@@ -1,15 +1,58 @@
-- class_name: 網站
-  class_desc: 值得推薦的網站
+- class_name: 网站
+  class_desc: 值得推荐的网站
   link_list:
     - name: Youtube
       link: https://www.youtube.com/
       avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 視頻網站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平台
-    - name: Twitter
+      descr: 视频网站
+    - name: X
       link: https://twitter.com/
       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
       descr: 社交分享平台
+    - name: Bilibili
+      link: https://www.bilibili.com/
+      avatar: https://ts2.cn.mm.bing.net/th?id=OIP-C.MljqVYftbJs8MJhMqRxQRAAAAA&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2
+      descr: 同性社交平台
+    - name: Reddit
+      link: https://www.reddit.com/
+      avatar: https://www.redditinc.com/assets/images/site/Reddit_Icon_FullColor-1_2023-11-29-161416_munx.jpg
+      descr: 老外交流网站
+    - name: pixiv
+      link: https://www.pixiv.net/
+      avatar: https://th.bing.com/th?id=ODLS.288f7948-fd10-4204-af03-bef78f225199&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2
+      descr: 精美图片
+    - name: ins
+      link: https://www.instagram.com/
+      avatar: https://th.bing.com/th?id=ODLS.b557d816-349a-493c-9184-f5f2b8977e68&w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2
+      descr: 国际微博
+    - name: Google
+      link: https://www.google.com/
+      avatar: https://th.bing.com/th?id=ODLS.8ed86604-ea7f-4754-8cd6-2ef699736a7d&w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2
+      descr: 搜索
+    - name: Facebook
+      link: https://www.facebook.com/
+      avatar: https://th.bing.com/th?id=ODLS.fa0e9a6b-6abe-4d47-b7d9-50e8afbd76d9&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2
+      descr: 可能是贴吧
+    - name: Github
+      link: https://github.com/
+      avatar: https://th.bing.com/th?id=ODLS.05409d17-5d83-4701-acc1-90430dd3b02c&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2
+      descr: 同行交友网站
+- class_name: 技术问题
+  class_desc: 国际技术问题解答
+  link_list:
+    - name: stackoverflow
+      link: https://stackoverflow.com/
+      avatar: https://th.bing.com/th?id=OIP.Kn4u32_gHL3CArN6ieQN3wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2
+      descr: 著名技术问答平台
+    - name: serverfault
+      link: https://serverfault.com/
+      avatar: https://ts3.cn.mm.bing.net/th?id=OIP-C.dwfsXD05qoGnOAFfaOUIgQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2
+      descr: 程序员客栈
+    - name: techcrunch
+      link: https://techcrunch.com/
+      avatar: https://ts3.cn.mm.bing.net/th?id=ODLS.baf462f6-dd45-473b-931f-4b6a0c1abf45&w=32&h=32&qlt=93&pcl=fffffa&o=6&pid=1.2
+      descr: 程序员
+    - name: ycombinator
+      link: https://ycombinator.com/
+      avatar: https://ts2.cn.mm.bing.net/th?id=ODLS.1a3e848c-8384-46ba-9403-200623ca1b91&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2
+      descr: 序员

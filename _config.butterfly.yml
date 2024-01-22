@@ -26,7 +26,7 @@ highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac li
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 28 # unit: px
+highlight_height_limit: 200 # unit: px
 code_word_wrap: false
 
 # Social Settings (社交圖標設置)
@@ -34,13 +34,13 @@ code_word_wrap: false
 #   icon: link || the description || color
 social:
   fab fa-github: https://github.com/fms231 || Github || '#24292e'
-  fas fa-envelope: 1712541185@qq.com || Email || '#4a7dbe'
+  fas fa-envelope: mailto:1712541185@qq.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/boqi.png
+favicon: /img/logoicon.png
 
 # Avatar (頭像)
 avatar:
@@ -54,19 +54,19 @@ disable_top_img: false
 index_img: https://pic3.zhimg.com/v2-5523ed93593ee4c7fd97b972d0af92d3_r.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: img/fms.jpg
+default_top_img: img/band.jpg
 
 # The banner image of archive page
 archive_img: img/xiduo.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: img/top_img.jpg
+tag_img: img/band.jpg
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: img/top_img.jpg
+tag_per_img: img/band.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
@@ -226,7 +226,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 宝剑锋从磨砺出，梅花香自苦寒来。
     button:
       enable: true
       icon: fab fa-github
@@ -234,7 +234,7 @@ aside:
       link: https://github.com/fms231
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 宝剑锋从磨砺出，梅花香自苦寒来。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -916,7 +916,7 @@ inject:
     - <link rel="stylesheet" href="/css/_custom/custom.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/font.css">
   bottom:
-    - <div class="aplayer no-destroy" data-id="421423806" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>
+    - <div class="aplayer no-destroy" data-id="421423808" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>
     - <script src="/js/custom.js"></script>
     - <script src="/js/weather.js"></script>
     - <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
