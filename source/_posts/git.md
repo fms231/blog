@@ -47,6 +47,7 @@ git push命令用于将本地仓库推送到远程仓库。
 2. more explicitly, could write git push origin master
 ```bash
 git push <remote> <branch>
+git push origin main
 ```
 ### git pull
 git pull命令用于将远程仓库拉取到本地。
