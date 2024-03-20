@@ -451,4 +451,119 @@ $$
 其中A是一个矩阵，$\vec{v}$是一个向量（特征向量），$\lambda$是一个标量（特征值）。
 矩阵$A$当然是一个变换，然后这个变换的特殊之处是当它作用在特征向量上的时候，只发生了缩放变换，它的方向并没有改变，并没有旋转。
 获得了一个矩阵之后，可以通过行列式求出特征值，然后通过特征值结合矩阵求解得出特征向量。
+### 正定矩阵
+正定矩阵是指矩阵的特征值都大于0的矩阵，例如：
+$$
+\begin{pmatrix}
+    1 & 0 \\
+    0 & 1 \\
+\end{pmatrix}
+$$
+的特征值为1，因此是正定矩阵。
+正定矩阵的公式为：
+$$
+f(A) = x^TAx>0
+$$
+其中x是任意一个非零向量，A是正定矩阵。
+### 正交矩阵
+正交矩阵是指矩阵的行向量两两正交，且行向量的模为1，例如：
+$$
+\begin{pmatrix}
+    \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+    \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\
+\end{pmatrix}
+$$
+的行向量两两正交，且行向量的模为1，因此是正交矩阵。
+
+
+## 额外了解
+### 标量对向量求导
+$$
+\frac{\partial f}{\partial \vec{v}}
+$$
+$$
+\vec{v} = (v_1, v_2, v_3)
+$$
+标量对向量求导是指标量对向量中的每个元素求导，例如：
+$$
+\frac{\partial f}{\partial \vec{v}}=
+\begin{pmatrix}
+    \frac{\partial f}{\partial v_1} \\
+    \frac{\partial f}{\partial v_2} \\
+    \frac{\partial f}{\partial v_3} \\
+\end{pmatrix}
+$$
+$\vec{v}$原本为行向量，求导后$\frac{\partial f}{\partial \vec{v}}$变为列向量。
+![标量对向量求导](/img/m.png)
+### 向量对标量求导
+$$
+\frac{\partial \vec{v}}{\partial x}
+$$
+$$
+\vec{v} = 
+\begin{pmatrix}
+    v_1 \\
+    v_2 \\
+    v_3\\
+\end{pmatrix}
+$$
+向量对标量求导的结果是一个向量，向量的每个元素都是对应元素的求导结果，例如：
+$$
+\frac{\partial \vec{v}}{\partial x}=
+\begin{pmatrix}
+    \frac{\partial v_1}{\partial x} \\
+    \frac{\partial v_2}{\partial x} \\
+    \frac{\partial v_3}{\partial x} \\
+\end{pmatrix}
+$$
+$\vec{v}$是一个列向量，求导后$\frac{\partial \vec{v}}{\partial x}$还是列向量。
+### 向量对向量求导
+$$
+\frac{\partial \vec{v}}{\partial \vec{w}}
+$$
+$$
+\vec{v} =
+\begin{pmatrix}
+    v_1 \\
+    v_2 \\
+    v_3\\
+\end{pmatrix}
+$$
+$$
+\vec{w} =
+\begin{pmatrix}
+    w_1 \\
+    w_2 \\
+    w_3\\
+\end{pmatrix}
+$$
+向量对向量求导的结果是一个矩阵，矩阵的每个元素都是对应元素的求导结果，例如：
+$$
+\frac{\partial \vec{v}}{\partial \vec{w}}=
+\begin{pmatrix}
+    \frac{\partial v_1}{\partial w_1} & \frac{\partial v_1}{\partial w_2} & \frac{\partial v_1}{\partial w_3} \\
+    \frac{\partial v_2}{\partial w_1} & \frac{\partial v_2}{\partial w_2} & \frac{\partial v_2}{\partial w_3} \\
+    \frac{\partial v_3}{\partial w_1} & \frac{\partial v_3}{\partial w_2} & \frac{\partial v_3}{\partial w_3} \\
+\end{pmatrix}
+$$
+$\vec{v}$和$\vec{w}$都是列向量，求导后$\frac{\partial \vec{v}}{\partial \vec{w}}$是一个矩阵。
+![向量对向量求导](/img/vec.png)
+![向量对向量求导的例子](/img/vecExample.png)
+### 矩阵对标量求导
+$$
+\frac{\partial A}{\partial x}
+$$
+矩阵对标量求导的结果是一个矩阵，矩阵的每个元素都是对应元素的求导结果，例如：
+$$
+\frac{\partial A}{\partial x}=
+\begin{pmatrix}
+    \frac{\partial a_{11}}{\partial x} & \frac{\partial a_{12}}{\partial x} \\
+    \frac{\partial a_{21}}{\partial x} & \frac{\partial a_{22}}{\partial x} \\
+\end{pmatrix}
+$$
+### 标量、向量、矩阵求导的关系
+![标量、向量、矩阵求导的关系](/img/pic1.png)
+![标量、向量、矩阵求导的关系](/img/pic2.png)
+### 链式求导
+![链式求导](/img/list.png)
 
